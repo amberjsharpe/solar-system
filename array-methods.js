@@ -46,3 +46,8 @@ planets.map(function ePlanets(planet){
 
 // Use the reduce method to create a sentence from the words in the following array
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
+
+const sentence = words.reduce(
+    (currentWord, next) => currentWord + ' ' + next
+)
+console.log(sentence);
